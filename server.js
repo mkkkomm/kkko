@@ -29,3 +29,7 @@ app.post('/send-message', async (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
+
+// Add this line to your server.js file
+app.use(express.static('public'));
+
